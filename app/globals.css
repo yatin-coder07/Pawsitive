@@ -78,7 +78,7 @@ body{
   @apply grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2
  }
  .Adoption-card{
-  @apply border-blue-950 border-2 border-solid text-black w-80 sm:w-80 ml-10 gap-5 rounded-2xl mb-10 shadow-2xl 
+  @apply border-blue-950 border-2 border-solid text-black w-80 sm:w-80 ml-5 gap-5 rounded-2xl mb-10 shadow-2xl 
  }
  .Dog-image{
   @apply h-50 w-60 rounded-2xl mb-2 sm:h-60 sm:w-70
