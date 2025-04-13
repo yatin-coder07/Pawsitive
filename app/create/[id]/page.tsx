@@ -1,6 +1,7 @@
 
 import { client } from '@/sanity/lib/client'
 import { ADOPTION_BY_ID_QUERY } from '@/sanity/lib/queries'
+ import Link from 'next/link'
 import React from 'react'
 
 
@@ -15,14 +16,18 @@ const id= (await params).id
     <>
     <div className="Header-container bg-deepblue flex justify-center items-center ">
 
-        <div className="Dog-image-container bg-yellow">
-          <img src={post.image} alt=""className='h-45 sm:h-60  ' />
-        </div>
+    <Link href={"/"}><h1><span className="color-orange page-title">Paw</span><span className="page-title">sitive</span></h1></Link>
+
+        
        
     </div>
 
     <div className="Dog-details-section ">
-     <div className='flex justify-center mt-5'> <h1 className="text-7xl"><span className='text-orange-500'>Dog</span > <span className='text-blue-950' >Details</span></h1></div>
+     <div className='flex justify-center mt-5'>
+     <div className="Dog-image-container ">
+          <img src={post.image} alt=""className='h-60 w-80 sm:h-100 sm:w-150 rounded-2xl' />
+        </div>
+     </div>
      <div className="flex justify-center items-center bg-yellow text-4xl h-30 mt-3 sm:text-5xl">
       <h5> Posted on : {post._createdAt}</h5>
      </div>
@@ -31,7 +36,7 @@ const id= (await params).id
       <h2  ><span className='font-jaro'>Dog's Breed :</span> : {post.breed}</h2> 
       <h3> <span className='font-jaro'>Dog's Age :</span>  {post.age} years</h3>
       <h4><span className='font-jaro'>Dog's City :</span>  {post.city}</h4>
-      <h5> <span className='font-jaro'>Dog's Location :</span>  <span className='text-blue-950'>{post.location}</span></h5>
+      <h5> <span className='font-jaro'>Dog's Location :</span>  <span className='text-blue-950 text-[25px]'>{post.location}</span></h5>
       
      </div>
 
