@@ -21,7 +21,7 @@ const SearchInput = ({query}:{query?:string}) => {
 
             }
 
-            <button className="search-btn pl-3">
+            <button className="search-btn pl-3 transition transform duration-200 ease-in-out hover:bg-blue-200 text-[10px]">
                 <Search/>
             </button>
          </div>

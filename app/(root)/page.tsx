@@ -10,9 +10,9 @@ import Link from "next/link";
 
 
 export default async function Home({searchParams}:{searchParams:Promise<{query?:string}>}) {
-
-  const query = (await searchParams).query
-  const params = {search: query || null};
+const query = (await searchParams).query
+ const params = {search: query || null};
+ 
 
   const posts = await client.fetch(DOGS_QUERY ,params);
 
@@ -22,7 +22,7 @@ export default async function Home({searchParams}:{searchParams:Promise<{query?:
   return (
    <>
     
-    <SearchInput query={query}/>
+   
     <section className="Cards-container">
      <ul className="mt-7 cards-grid mr-10">
        {posts?.length > 0 ? (
