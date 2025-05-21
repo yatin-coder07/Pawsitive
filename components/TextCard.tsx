@@ -3,7 +3,7 @@ import { AnimatePresence ,motion } from 'framer-motion'
 import { Heart } from 'lucide-react'
 import React from 'react'
 
-const TextCard = () => {
+export const TextCard = () => {
   return (
     <AnimatePresence>
         <motion.div 
@@ -26,5 +26,3 @@ const TextCard = () => {
     
   )
 }
-
-export default TextCard

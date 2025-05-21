@@ -3,7 +3,7 @@ import { AnimatePresence,motion } from 'framer-motion'
 import Link from 'next/link'
 import React, { useState } from 'react'
 
-const ServiceCard = ({card}) => {
+export const ServiceCard = ({card}) => {
     const [isHover,setIsHover]=useState(false)
   return (
     <>
@@ -52,4 +52,3 @@ const ServiceCard = ({card}) => {
   )
 }
 
-export default ServiceCard
