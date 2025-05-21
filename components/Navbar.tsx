@@ -14,7 +14,7 @@ const Navbar = async({searchParams}:{searchParams:Promise<{query?:string}>}) => 
   return (
    
     <AnimatePresence >
-      <div className="Header-container bg-sky-400">
+      <div className="Header-container bg-amber-500">
 
       
       <div className="Header inline-flex justify-end items-center">
@@ -24,7 +24,7 @@ const Navbar = async({searchParams}:{searchParams:Promise<{query?:string}>}) => 
             
 
              <Link href={`/user/${session?.id}`}>
-              <span className="Username">{session?.user?.name}</span>
+              <span className="Username">Hey!, {session?.user?.name}</span>
              </Link>
 
               <Link href={"/post/create"}> <button className="create-btn">Post Your Doggo</button>

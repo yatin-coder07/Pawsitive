@@ -73,14 +73,12 @@
     @apply bg-blue-900 text-white sm:h-10 sm:w-12 
   }
  .cards-grid{
-  @apply grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2
+  @apply grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-7 ml-10 sm:gap-10 md:gap-20 sm:ml-5 sm:mr-15
  }
  .Adoption-card{
-  @apply flex flex-row bg-linear-to-t from-sky-400 to-indigo-400  text-white h-50 w-100 justify-between p-2 transition transform duration-200 ease-in-out hover:bg-blue-200 
+  @apply flex flex-row bg-amber-600 text-white h-50 w-100 sm:w-80 justify-between p-2 transition transform duration-200 ease-in-out hover:bg-amber-300 
  }
- .Dog-image{
-  @apply h-50 w-60 rounded-2xl mb-2 sm:h-60 sm:w-70
- }
+
  .card-image-container{
   @apply flex justify-center 
  }
