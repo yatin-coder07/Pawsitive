@@ -1,6 +1,6 @@
 
 import { auth , signIn , signOut} from "@/auth"
-import { AnimatePresence , motion } from "framer-motion"
+
 
 import Link from "next/link"
 import SearchInput from "./SearchInput"
@@ -13,7 +13,7 @@ const Navbar = async({searchParams}:{searchParams:Promise<{query?:string}>}) => 
      const session= await auth()
   return (
    
-    <AnimatePresence >
+    
       <div className="Header-container bg-amber-500">
 
       
@@ -64,7 +64,7 @@ const Navbar = async({searchParams}:{searchParams:Promise<{query?:string}>}) => 
           </div>
         </div>
     </div>
-    </AnimatePresence>
+   
   )
 }
 
