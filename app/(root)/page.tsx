@@ -6,7 +6,7 @@ import {ServiceCard} from "@/components/ServiceCard";
 import {TextCard} from "@/components/TextCard";
 import { client } from "@/sanity/lib/client";
 import { DOGS_QUERY } from "@/sanity/lib/queries";
-
+//new design
 
 
 
