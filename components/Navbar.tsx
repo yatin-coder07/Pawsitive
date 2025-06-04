@@ -4,6 +4,7 @@ import { auth , signIn , signOut} from "@/auth"
 
 import Link from "next/link"
 import SearchInput from "./SearchInput"
+import { BlurText } from "./ui/BlurText"
 
 
 const Navbar = async({searchParams}:{searchParams:Promise<{query?:string}>}) => {
@@ -54,7 +55,22 @@ const Navbar = async({searchParams}:{searchParams:Promise<{query?:string}>}) => 
       
         <div className=" flex flex-row gap-2 justify-evenly sm:pl-8">
           <div className="flex flex-col gap-1 sm:gap-4 md:gap-8 lg:gap-5 ">
-            <h1 className=" text-4xl sm:text-6xl md:text-7xl lg:text-9xl font-bold">Dog <br />Adoption</h1>
+               <BlurText
+                  text="Dog"
+                  delay={150}
+                  animateBy="words"
+                  direction="top"
+                 
+                  className="sm:text-5xl md:text-5xl lg:text-7xl font-bold"
+/>
+           <BlurText
+              text="Adoption"
+              delay={150}
+              animateBy="words"
+              direction="top"
+             
+              className="sm:text-5xl md:text-5xl lg:text-7xl font-bold"
+            />
             <h2 className=" text-[10px] sm:text-[19px] lg:text-[21px]">Adopt a dog and give them a warm happy home. <br />
             Book services for your dog and take care of them.</h2>
              <SearchInput query={query}/>
